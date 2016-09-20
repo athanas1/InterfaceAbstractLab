@@ -9,7 +9,8 @@ import javax.swing.JOptionPane;
  * @version 1.00
  */
 public class IntroToProgrammingCourse implements ProgrammingCourse {
-
+// Should have a prerequisites property because of polymorphism. Since I do not 
+// have it Polymorphism is not possible in the class
     private String courseName;
     private String courseNumber;
     private double credits;
