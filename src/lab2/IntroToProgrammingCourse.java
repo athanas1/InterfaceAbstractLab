@@ -20,7 +20,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
         this.setCourseNumber(courseNumber);
     }    
     @Override
-   public String getCourseNumber() {
+   public final String getCourseNumber() {
         return courseNumber;
     }
     @Override
@@ -33,12 +33,12 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
         this.courseNumber = courseNumber;
     }
     @Override
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
     
     @Override
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }
     @Override
@@ -51,7 +51,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
         this.courseName = courseName;
     }
     @Override
-    public void setCredits(Double credits) {
+    public final void setCredits(Double credits) {
         if (credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");

@@ -14,11 +14,11 @@ public class IntroJavaCourse extends ProgrammingCourse {
         this.setCourseNumber(courseNumber);
     }
 
-    public String getPrerequisites() {
+    public final String getPrerequisites() {
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
+    public final void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
 

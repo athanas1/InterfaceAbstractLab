@@ -18,14 +18,16 @@ public class Test {
     }
 
     public void setLastName(String LastName) {
+        //Validation
         this.LastName = LastName;
     }
 
-    public String getFirstName() {
+    public final String getFirstName() {
         return FirstName;
     }
 
     public void setFirstName(String FirstName) {
+        //validation
         this.FirstName = FirstName;
     }
     

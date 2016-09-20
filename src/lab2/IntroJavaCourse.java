@@ -19,11 +19,11 @@ public class IntroJavaCourse implements ProgrammingCourse {
         this.courseNumber = courseNumber;
     }
     
-        public String getPrerequisites() {
+        public final String getPrerequisites() {
         return prerequisites;
     }
     
-    public void setPrerequisites(String prerequisites) {
+    public final void setPrerequisites(String prerequisites) {
         if (prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null of empty string");
@@ -32,7 +32,7 @@ public class IntroJavaCourse implements ProgrammingCourse {
         this.prerequisites = prerequisites;
     }
     @Override
-   public String getCourseNumber() {
+   public final String getCourseNumber() {
         return courseNumber;
     }
     @Override
@@ -45,12 +45,12 @@ public class IntroJavaCourse implements ProgrammingCourse {
         this.courseNumber = courseNumber;
     }
     @Override
-    public double getCredits() {
+    public final double getCredits() {
         return credits;
     }
     
     @Override
-    public String getCourseName() {
+    public final String getCourseName() {
         return courseName;
     }
     @Override
